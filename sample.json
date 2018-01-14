@@ -1,0 +1,23 @@
+[
+    {"license": "124ABC", "location": "2345.67", "time": "9:01UTC"},
+    {"license": "435DXV", "location": "098.76", "time": "9:01UTC"},
+    {"license": "123SDF", "location": "2394.87", "time": "9:01UTC"},
+    {"license": "23DABC", "location": "2489.375", "time": "9:01UTC"},
+    {"license": "8UIOYT", "location": "078.92345", "time": "9:01UTC"},
+    {"license": "43WSDQ", "location": "77.98", "time": "9:03UTC"},
+    {"license": "098UJK", "location": "423.578", "time": "9:01UTC"},
+    {"license": "123ABC", "location": "2345.67", "time": "9:01UTC"},
+    {"license": "435DXV", "location": "098.76", "time": "9:01UTC"},
+    {"license": "123SDF", "location": "2394.87", "time": "9:01UTC"},
+    {"license": "23DABC", "location": "2489.375", "time": "9:01UTC"},
+    {"license": "8UIOYT", "location": "078.92345", "time": "9:01UTC"},
+    {"license": "43WSDQ", "location": "77.98", "time": "9:01UTC"},
+    {"license": "098UJK", "location": "423.578", "time": "9:01UTC"},
+    {"license": "123ABC", "location": "2345.67", "time": "9:01UTC"},
+    {"license": "435DXV", "location": "098.76", "time": "9:01UTC"},
+    {"license": "123SDF", "location": "2394.87", "time": "9:01UTC"},
+    {"license": "23DABC", "location": "2489.375", "time": "9:01UTC"},
+    {"license": "8UIOYT", "location": "078.92345", "time": "9:01UTC"},
+    {"license": "43WSDQ", "location": "77.98", "time": "9:01UTC"},
+    {"license": "098!!JK", "location": "423.578", "time": "9:01UTC"}
+]

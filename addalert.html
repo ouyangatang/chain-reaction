@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<title>Amber Alert</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYdr-nKcpSmEKp_1GuBLR9sX2UxYMXRyQ&callback=initMap"
+  type="text/javascript"></script>
+
+</head>
+<body id="form">
+	<form class="close-container" action="dashboard.html">
+	    <button class="close" type="submit"/><img src="close.png"></button>
+	</form>
+	<div class="container">
+		<form>
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">License Plate #</label>
+		    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Example: 123ABC">
+		    <small id="emailHelp" class="form-text text-muted">Please include only alphanumeric characters.</small>
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">State</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Example: California">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Subject Name</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Example: John Doe">
+		  </div>
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Case ID</label>
+		    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Example: 95432">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

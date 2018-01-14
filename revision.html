@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="ideoColabApp" ng-controller="DashboardController">
+<head>
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<title>Amber Alert</title>
+    <meta charset="UTF-8">
+    <link href="dashboard.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://code.angularjs.org/1.4.5/angular-route.js"></script>    
+    <script src="dashboardController.js"></script>
+  	<!-- Map Box -->
+  	<script src='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.js'></script>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css' rel='stylesheet'/>
+  	<!-- // <script src="map.js"></script> -->
+</head>
+<body>
+	<div class="container-fluid no-gutters">
+		<div class="row map-container">
+			<div id='map'></div>
+			<script src="map.js"></script>
+			<div class="overlay">
+				<img src="logo.png">
+				<div class="account">
+					San Francisco Police Department
+				</div>
+				<br>
+				<div class="row search-container no-gutters">
+					<form class="col-12" action="case.html">
+				    	<input class="col-12" type="text" placeholder="Search Cases" aria-label="Search">
+				    </form>
+				</div>
+				<div class="hits"> 
+			    	<div class="row hit no-gutters" ng-repeat="hit in hits">
+			    		<div class="title col-8">
+			    			PLATE {{hit.properties.license}}<br>
+			    			<span class="case">CASE #0984</span>
+			    		</div>
+			    		<div class="time col-4">9:48AM</div>
+			    		<div class="coord">
+			    			<span>LATITUDE:</span> {{hit.geometry.coordinates[1]}} <br>
+			    			<span>LONGITUDE:</span> {{hit.geometry.coordinates[0]}}
+			    		</div>
+			    	</div>
+
+			    </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

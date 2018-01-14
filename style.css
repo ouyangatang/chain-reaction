@@ -1,0 +1,89 @@
+img {
+	height: 15px;
+	width: 15px;
+	margin: 10px;
+}
+.add {
+	border: none;
+	height: 100%;
+	padding-top:3px;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	color: #BBB;
+	font-weight: bold;
+}
+.add:hover {
+	opacity: 0.5;
+}
+.search {
+	display: flex;
+	height: 45px;
+	background-color: white;
+	border-bottom: 1px solid #DDD;
+	z-index: 10;
+}
+.search-icon {
+	height: 100%;
+}
+.search-input {
+	border: none;
+	height: 100%;
+	flex: 1 1 auto;
+}
+.search-icon img {
+	height: 25px;
+	width: 25px;
+	padding: 5px;
+}
+.content {
+	height: 100%;
+}
+.map {
+	background-color: #EDEFF5;
+}
+.close-container {
+	height: 20vh;
+}
+.hits {
+	flex: 1 1 auto;
+	overflow: scroll;
+}
+.hit {
+	padding: 10px;
+	background-color: #fafafa;
+	border-bottom: 1px solid #DDD;
+	font-size: 12px;
+}
+.container-fluid {
+    padding: 0px;
+    height: 100vh;
+}
+#map {
+	height: 100%;
+	width: 100%;
+}
+.container {
+	max-width: 700px;
+}
+input:focus, button:focus {
+    outline: none;
+}
+.updates {
+	display: flex;
+	flex-direction: column;
+}
+.updates {
+	width: 100%;
+}
+.time {
+	text-align: right;
+}
+#form {
+	background-color: #ddd;
+}
+.photo {
+	background-image: url('alertee.jpeg');
+	background-size: cover;
+	height: 150px;
+}
