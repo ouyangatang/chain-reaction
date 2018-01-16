@@ -9,7 +9,8 @@ var map = new mapboxgl.Map({
 var nav = new mapboxgl.NavigationControl();
 	map.addControl(nav, 'top-left');
 
-var url = "http://10.2.252.70:4000/alerts/CA-ILEG0";
+// var url = "http://10.2.252.70:4000/alerts/CA-ILEG0";
+var url = "http://localhost:8000/points.json";
 map.on('load', function () {
 	window.setInterval(function() {
         map.getSource('hits').setData(url);
